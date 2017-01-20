@@ -12,21 +12,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var coolLabel: UILabel!
     
-    var tapCount = 0
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
     
     @IBAction func buttonTapped(_ sender: Any) {
+        print(text1.text!)
+        print(text2.text!)
         
-        if coolLabel.text == "Where am I?"{
-            coolLabel.text = "Hello world!"
-        } else {
-            coolLabel.text = "Where am I?"
-        }
-        
-        tapCount += 1
-        
-        if tapCount >= 12{
-            coolLabel.text = "Bitch, stop pressing me!"
-        }
     }
     
     @IBAction func secondButtonTapped(_ sender: Any) {
