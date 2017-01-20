@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         
         tapCount += 1
         
-        if tapCount >= 10{
+        if tapCount >= 12{
             coolLabel.text = "Bitch, stop pressing me!"
         }
     }
